@@ -5,7 +5,7 @@ plugins {
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdk 31
+    compileSdk 35
     namespace "com.tyron.kotlin_completion"
 	
     defaultConfig {
@@ -23,12 +23,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility versionCode
+        targetCompatibility versionCode
     }
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildToolsVersion '35.0.1'
 }
 
 configurations.implementation {
@@ -47,17 +48,17 @@ dependencies {
     implementation project(path: ':editor-api')
     implementation project(path: ':common')
 
-    implementation 'org.jetbrains.exposed:exposed-core:0.32.1'
-    implementation 'org.jetbrains.exposed:exposed-dao:0.32.1'
-    implementation 'org.jetbrains.exposed:exposed-jdbc:0.32.1'
-    implementation 'com.h2database:h2:1.4.200'
-    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'org.jetbrains.exposed:exposed-core:0.59.0'
+    implementation 'org.jetbrains.exposed:exposed-dao:0.59.0'
+    implementation 'org.jetbrains.exposed:exposed-jdbc:0.59.0'
+    implementation 'com.h2database:h2:2.3.232'
+    implementation 'androidx.annotation:annotation:1.9.1'
     
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.2'
     testImplementation projects.buildTools.kotlinc
 
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
