@@ -3,18 +3,17 @@
 buildscript {
     ext {
         agp_version = '8.8.1'
-        8.8 agp_version
     }
     ext.kotlin_version = '2.0.0-RC1'
     repositories {
         google()
         maven { url 'https://jitpack.io' }
-    	maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://plugins.gradle.org/m2/" }
         mavenCentral()
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.8.1"
+        classpath "com.android.tools.build:gradle:$agp_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -27,7 +26,7 @@ allprojects {
     repositories {
         google()
         maven { url 'https://jitpack.io' }
-    	maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://plugins.gradle.org/m2/" }
         mavenCentral()
         maven {
             url 'https://repo.gradle.org/gradle/libs-releases/'
