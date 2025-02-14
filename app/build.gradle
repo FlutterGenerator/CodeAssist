@@ -12,16 +12,18 @@ android {
         targetSdkVersion targetSdkVersion
         versionCode versionCode
         versionName versionName
+        multiDexEnabled true // Enable multidex
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
         }
         
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
         coreLibraryDesugaringEnabled = true
-        sourceCompatibility = versionCode
-        targetCompatibility = versionCode
     }
 
     kotlinOptions {
@@ -45,9 +47,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     buildFeatures {
         viewBinding true        
-        buildConfig true	        
+        buildConfig true
     }
 
     packagingOptions {
@@ -56,7 +59,6 @@ android {
         }
         
         resources.excludes += "license/*"
-
         exclude "plugin.properties"
         exclude "plugin.xml"
         exclude "about.html"
@@ -88,7 +90,6 @@ dependencies {
 
     // TODO: Removed these modules, the features that are using these modules
     // should be moved into its own module.
-
     // TODO: language processing should be on its own module
     implementation 'org.antlr:antlr4-runtime:4.13.2'
     implementation files (
@@ -106,10 +107,6 @@ dependencies {
     implementation project(path: ':build-tools:xml-repository')
     implementation project(path: ':java-completion')
     implementation projects.eventManager
-    // not used for compilation, but for analysis
-    implementation project(path: ':build-tools:javac')
-
-    implementation project(path: ':language-api')
 
     // groovy support
     implementation projects.buildTools.builderBaseServicesGroovy
@@ -192,7 +189,6 @@ dependencies {
     implementation project(path: ':eclipse-formatter')
     implementation project(path: ':build-tools:builder-core')
 
-
     runtimeOnly projects.javaStubs
     //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 
@@ -208,5 +204,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 
-    coreLibraryDesugaring('com.android.tools:desugar_jdk_libs:2.1.4')
+    coreLibraryDesugaring('com.android.tools:desugar_jdk_libs:1.1.5')  // Correct desugaring version
 }
