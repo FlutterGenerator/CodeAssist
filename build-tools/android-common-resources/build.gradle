@@ -8,11 +8,11 @@ dependencies {
     api files('libs/converted-common-30.40.0-alpha09.jar')
     api files('libs/converted-data-binding.jar')
 
-    implementation 'com.android.tools:annotations:30.4.0-alpha09'
-    api("com.android.tools:sdk-common:30.4.0-alpha09") {
+    implementation 'com.android.tools:annotations:31.8.1'
+    api('com.android.tools:sdk-common:31.8.1') {
         transitive = false
     }
-    api("com.android.tools.layoutlib:layoutlib-api:30.4.0-alpha09") {
+    api('com.android.tools.layoutlib:layoutlib-api:31.8.1') {
         exclude group: 'com.android.tools', module: 'common'
     }
     implementation 'javax.inject:javax.inject:1'
