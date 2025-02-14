@@ -1,6 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext {
+        agp_version = '8.8.1'
+        8.8 agp_version
+    }
     ext.kotlin_version = '2.0.0-RC1'
     repositories {
         google()
@@ -10,7 +14,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.4.0-alpha07'		
+        classpath "com.android.tools.build:gradle:8.8.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -44,4 +48,5 @@ ext {
     applicationId = "com.tyron.code"
     versionCode = 21
     versionName = "0.3.0 ALPHA"
+    compileSdkVersion1 = 35
 }
