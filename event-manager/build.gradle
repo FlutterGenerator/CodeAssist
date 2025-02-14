@@ -4,7 +4,7 @@ plugins {
 
 dependencies {
     implementation projects.common
-    implementation 'androidx.annotation:annotation:1.3.0'   
+    implementation 'androidx.annotation:annotation:1.9.1'
 }
 
 java {
