@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/actions-api" />
+            <option value="$PROJECT_DIR$/android-stubs" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/build-tools" />
+            <option value="$PROJECT_DIR$/build-tools/android-common-resources" />
+            <option value="$PROJECT_DIR$/build-tools/build-cache" />
+            <option value="$PROJECT_DIR$/build-tools/build-logic" />
+            <option value="$PROJECT_DIR$/build-tools/builder-api" />
+            <option value="$PROJECT_DIR$/build-tools/builder-base-annotations" />
+            <option value="$PROJECT_DIR$/build-tools/builder-base-services" />
+            <option value="$PROJECT_DIR$/build-tools/builder-base-services-groovy" />
+            <option value="$PROJECT_DIR$/build-tools/builder-build-cache-base" />
+            <option value="$PROJECT_DIR$/build-tools/builder-build-events" />
+            <option value="$PROJECT_DIR$/build-tools/builder-build-operations" />
+            <option value="$PROJECT_DIR$/build-tools/builder-composite-builds" />
+            <option value="$PROJECT_DIR$/build-tools/builder-configuration-cache" />
+            <option value="$PROJECT_DIR$/build-tools/builder-core" />
+            <option value="$PROJECT_DIR$/build-tools/builder-core-api" />
+            <option value="$PROJECT_DIR$/build-tools/builder-dependency-management" />
+            <option value="$PROJECT_DIR$/build-tools/builder-diagnostics" />
+            <option value="$PROJECT_DIR$/build-tools/builder-enterprise-operations" />
+            <option value="$PROJECT_DIR$/build-tools/builder-enterprise-workers" />
+            <option value="$PROJECT_DIR$/build-tools/builder-execution" />
+            <option value="$PROJECT_DIR$/build-tools/builder-file-temp" />
+            <option value="$PROJECT_DIR$/build-tools/builder-files" />
+            <option value="$PROJECT_DIR$/build-tools/builder-functional" />
+            <option value="$PROJECT_DIR$/build-tools/builder-hashing" />
+            <option value="$PROJECT_DIR$/build-tools/builder-ide" />
+            <option value="$PROJECT_DIR$/build-tools/builder-java" />
+            <option value="$PROJECT_DIR$/build-tools/builder-jvm-services" />
+            <option value="$PROJECT_DIR$/build-tools/builder-language-jvm" />
+            <option value="$PROJECT_DIR$/build-tools/builder-launcher" />
+            <option value="$PROJECT_DIR$/build-tools/builder-logging" />
+            <option value="$PROJECT_DIR$/build-tools/builder-messaging" />
+            <option value="$PROJECT_DIR$/build-tools/builder-model-core" />
+            <option value="$PROJECT_DIR$/build-tools/builder-model-groovy" />
+            <option value="$PROJECT_DIR$/build-tools/builder-native" />
+            <option value="$PROJECT_DIR$/build-tools/builder-normalization-java" />
+            <option value="$PROJECT_DIR$/build-tools/builder-persistent-cache" />
+            <option value="$PROJECT_DIR$/build-tools/builder-platform-base" />
+            <option value="$PROJECT_DIR$/build-tools/builder-platform-jvm" />
+            <option value="$PROJECT_DIR$/build-tools/builder-plugin-use" />
+            <option value="$PROJECT_DIR$/build-tools/builder-plugins" />
+            <option value="$PROJECT_DIR$/build-tools/builder-problems" />
+            <option value="$PROJECT_DIR$/build-tools/builder-process-services" />
+            <option value="$PROJECT_DIR$/build-tools/builder-reporting" />
+            <option value="$PROJECT_DIR$/build-tools/builder-resources" />
+            <option value="$PROJECT_DIR$/build-tools/builder-resources-http" />
+            <option value="$PROJECT_DIR$/build-tools/builder-security" />
+            <option value="$PROJECT_DIR$/build-tools/builder-testing-base" />
+            <option value="$PROJECT_DIR$/build-tools/builder-testing-jvm" />
+            <option value="$PROJECT_DIR$/build-tools/builder-tooling-api" />
+            <option value="$PROJECT_DIR$/build-tools/builder-tooling-api-builders" />
+            <option value="$PROJECT_DIR$/build-tools/builder-worker-processes" />
+            <option value="$PROJECT_DIR$/build-tools/builder-workers" />
+            <option value="$PROJECT_DIR$/build-tools/builder-wrapper" />
+            <option value="$PROJECT_DIR$/build-tools/codeassist-builder-plugin" />
+            <option value="$PROJECT_DIR$/build-tools/eclipse-standalone" />
+            <option value="$PROJECT_DIR$/build-tools/file-collections" />
+            <option value="$PROJECT_DIR$/build-tools/file-watching" />
+            <option value="$PROJECT_DIR$/build-tools/groovy-compiler" />
+            <option value="$PROJECT_DIR$/build-tools/javac" />
+            <option value="$PROJECT_DIR$/build-tools/jaxp" />
+            <option value="$PROJECT_DIR$/build-tools/jaxp/jaxp-internal" />
+            <option value="$PROJECT_DIR$/build-tools/jaxp/xml" />
+            <option value="$PROJECT_DIR$/build-tools/kotlinc" />
+            <option value="$PROJECT_DIR$/build-tools/lint" />
+            <option value="$PROJECT_DIR$/build-tools/logging" />
+            <option value="$PROJECT_DIR$/build-tools/manifmerger" />
+            <option value="$PROJECT_DIR$/build-tools/project" />
+            <option value="$PROJECT_DIR$/build-tools/snapshots" />
+            <option value="$PROJECT_DIR$/build-tools/viewbinding-inject" />
+            <option value="$PROJECT_DIR$/build-tools/viewbinding-lib" />
+            <option value="$PROJECT_DIR$/build-tools/xml-repository" />
+            <option value="$PROJECT_DIR$/code-editor" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/completion-api" />
+            <option value="$PROJECT_DIR$/dependency-resolver" />
+            <option value="$PROJECT_DIR$/eclipse-formatter" />
+            <option value="$PROJECT_DIR$/editor-api" />
+            <option value="$PROJECT_DIR$/event-manager" />
+            <option value="$PROJECT_DIR$/fileeditor-api" />
+            <option value="$PROJECT_DIR$/google-java-format" />
+            <option value="$PROJECT_DIR$/java-completion" />
+            <option value="$PROJECT_DIR$/java-stubs" />
+            <option value="$PROJECT_DIR$/javapoet" />
+            <option value="$PROJECT_DIR$/kotlin-completion" />
+            <option value="$PROJECT_DIR$/language-api" />
+            <option value="$PROJECT_DIR$/layout-preview" />
+            <option value="$PROJECT_DIR$/layout-preview/appcompat-widgets" />
+            <option value="$PROJECT_DIR$/layout-preview/cardview" />
+            <option value="$PROJECT_DIR$/layout-preview/constraintlayout" />
+            <option value="$PROJECT_DIR$/layout-preview/proteus-core" />
+            <option value="$PROJECT_DIR$/layout-preview/vector-parser" />
+            <option value="$PROJECT_DIR$/terminalview" />
+            <option value="$PROJECT_DIR$/treeview" />
+            <option value="$PROJECT_DIR$/xml-completion" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
